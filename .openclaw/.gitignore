@@ -3,3 +3,6 @@ workspace/skills/gmail/service-account.json
 client_secret.json
 *.jsonl.deleted.*
 *.jsonl.reset.*
+browser/openclaw/user-data/
+*.log
+.DS_Store
