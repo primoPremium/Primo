@@ -1,0 +1,52 @@
+# OS / temp
+.DS_Store
+*.log
+*.tmp
+*.swp
+
+# secrets / auth
+client_secret.json
+*.pem
+*.key
+.env
+.env.*
+
+# python
+__pycache__/
+*.pyc
+venv/
+email-venv/
+.venv/
+
+# node
+node_modules/
+
+# snap
+snap/
+
+# openclaw large/generated stuff
+.openclaw/google-chrome-stable_current_amd64.deb
+.openclaw/workspace/*.tar.gz
+.openclaw/workspace/google-cloud-sdk/
+.openclaw/workspace/go/
+.openclaw/workspace/venv/
+.openclaw/workspace/gmail_env/
+.openclaw/workspace/woo_env/
+.openclaw/workspace/node_modules/
+.openclaw/workspace/__pycache__/
+.openclaw/workspace/logs/
+.openclaw/workspace/.git/
+.nvm/
+.openclaw.bak.2026-02-22-005529/
+.ssh/
+.gnupg/
+.cache/
+.config/
+.local/
+.npm/
+.pki/
+.agents/
+.bash_history
+.lesshst
+.wget-hsts
+.sudo_as_admin_successful
