@@ -1,0 +1,34 @@
+{
+  "monitoring": {
+    "intervals": {
+      "inventory_check": 300,
+      "order_status": 600,
+      "system_status": 900
+    },
+    "thresholds": {
+      "low_stock_alert": 5,
+      "critical_stock_alert": 2,
+      "order_processing_time": 3600,
+      "api_response_time": 5000
+    },
+    "reporting": {
+      "daily_report_time": "00:00",
+      "weekly_report_day": "Monday",
+      "monthly_report_day": 1
+    },
+    "alerts": {
+      "channels": ["telegram"],
+      "priority_levels": {
+        "low": {
+          "retry_interval": 3600
+        },
+        "medium": {
+          "retry_interval": 1800
+        },
+        "high": {
+          "retry_interval": 300
+        }
+      }
+    }
+  }
+}

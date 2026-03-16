@@ -1,0 +1,16 @@
+    "ice": {
+      "role": "system_integrator",
+      "source_of_truth": "~/.env",
+      "provides": ["system_status", "api_metrics", "integration_health", "credential_management"],
+      "consumes": [
+        {"from": "security", "data": ["security_requirements", "access_patterns"]},
+        {"from": "analytics", "data": ["system_load", "api_usage"]},
+        {"from": "web-posting", "data": ["platform_updates", "service_status"]}
+      ],
+      "notifies": ["main", "security", "analytics"],
+      "credentials": {
+        "manages": ["api_keys", "service_tokens", "passwords", "certificates"],
+        "validates": "daily",
+        "source": "~/.env"
+      }
+    }

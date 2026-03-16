@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Meds - Daily Summary</title>
+    <style>
+        :root {
+            --primary: #2c5282;
+            --background: #f7fafc;
+            --text: #2d3748;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: var(--background);
+            color: var(--text);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        
+        .summary-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+        
+        .timestamp {
+            color: #718096;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+        
+        .metrics {
+            margin: 1rem 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        
+        .metrics li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+    </style>
+</head>
+<body>
+    <div class="summary-card">
+        <h1>Premium Meds Daily Summary</h1>
+        <div class="timestamp">Generated: <script>document.write(new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles' }) + ' PT')</script></div>
+        <ul class="metrics">
+            <li>📊 Daily Metrics Overview</li>
+            <li>🎯 Key Actions Taken</li>
+            <li>📈 Performance Highlights</li>
+        </ul>
+    </div>
+</body>
+</html>

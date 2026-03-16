@@ -1,0 +1,43 @@
+{
+  "email_manager": {
+    "skill_path": "~/.openclaw/workspace/skills/gmail",
+    "templates_dir": "templates",
+    "credentials": "service-account.json",
+    "default_sender": "premiummedscollective@gmail.com",
+    "monitoring": {
+      "check_interval": 300,
+      "alert_threshold": 900,
+      "retry_limit": 3
+    },
+    "capabilities": [
+      "send",
+      "read",
+      "check",
+      "label"
+    ]
+  },
+  "ice_agent": {
+    "oversight": {
+      "monitor_interval": 900,
+      "health_check_interval": 3600,
+      "report_interval": 86400
+    },
+    "alerts": {
+      "delivery_delay": 1800,
+      "error_threshold": 3,
+      "quota_warning": 0.8
+    },
+    "reporting": {
+      "daily_status": true,
+      "weekly_analysis": true,
+      "error_immediate": true
+    }
+  },
+  "task_rabbit": {
+    "email_delegation": {
+      "require_confirmation": true,
+      "track_progress": true,
+      "verify_delivery": true
+    }
+  }
+}

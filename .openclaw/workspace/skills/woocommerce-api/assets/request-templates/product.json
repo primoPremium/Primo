@@ -1,0 +1,31 @@
+{
+    "name": "Product Name",
+    "type": "simple",
+    "regular_price": "29.99",
+    "description": "Full product description",
+    "short_description": "Brief description",
+    "categories": [
+        {
+            "id": 1
+        }
+    ],
+    "images": [
+        {
+            "src": "https://example.com/image.jpg"
+        }
+    ],
+    "attributes": [
+        {
+            "name": "Size",
+            "visible": true,
+            "variation": true,
+            "options": ["Small", "Medium", "Large"]
+        }
+    ],
+    "meta_data": [
+        {
+            "key": "custom_field",
+            "value": "custom value"
+        }
+    ]
+}

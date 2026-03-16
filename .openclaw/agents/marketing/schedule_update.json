@@ -1,0 +1,19 @@
+{
+  "id": "marketing",
+  "schedule_updates": {
+    "daily": [
+      {
+        "time": "10:00",
+        "task": "coordinate_blog_post",
+        "script": "scripts/coordinate_blog_post.py",
+        "dependencies": ["research", "web-posting"]
+      },
+      {
+        "time": "15:00",
+        "task": "content_review",
+        "script": "scripts/review_content.py",
+        "report_to": "ceo"
+      }
+    ]
+  }
+}

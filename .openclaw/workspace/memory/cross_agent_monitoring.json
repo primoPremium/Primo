@@ -1,0 +1,127 @@
+{
+  "version": "1.0.0",
+  "monitoring": {
+    "intervals": {
+      "health_check": 300,
+      "status_update": 900,
+      "full_report": 3600
+    },
+    "metrics": {
+      "agent_health": {
+        "type": "status",
+        "check_interval": 300,
+        "alert_threshold": "critical"
+      },
+      "task_completion": {
+        "type": "performance",
+        "check_interval": 900,
+        "alert_threshold": "warning"
+      },
+      "resource_usage": {
+        "type": "system",
+        "check_interval": 600,
+        "alert_threshold": "warning"
+      },
+      "interaction_success": {
+        "type": "communication",
+        "check_interval": 300,
+        "alert_threshold": "warning"
+      }
+    }
+  },
+  "reporting": {
+    "schedules": {
+      "daily_summary": {
+        "time": "23:00",
+        "format": "markdown",
+        "distribution": ["main", "all_agents"]
+      },
+      "weekly_report": {
+        "day": "Sunday",
+        "time": "23:00",
+        "format": "markdown",
+        "distribution": ["main"]
+      },
+      "monthly_analysis": {
+        "day": 1,
+        "time": "01:00",
+        "format": "markdown",
+        "distribution": ["main"]
+      }
+    },
+    "templates": {
+      "status_update": {
+        "sections": [
+          "agent_status",
+          "active_tasks",
+          "recent_events",
+          "pending_actions"
+        ]
+      },
+      "full_report": {
+        "sections": [
+          "executive_summary",
+          "agent_performance",
+          "system_health",
+          "interaction_metrics",
+          "recommendations"
+        ]
+      }
+    }
+  },
+  "alerts": {
+    "levels": {
+      "critical": {
+        "notification": "immediate",
+        "escalation": true,
+        "retry_interval": 300
+      },
+      "warning": {
+        "notification": "scheduled",
+        "escalation": false,
+        "retry_interval": 1800
+      },
+      "info": {
+        "notification": "daily",
+        "escalation": false,
+        "retry_interval": null
+      }
+    },
+    "channels": {
+      "immediate": [
+        "main",
+        "security",
+        "integration"
+      ],
+      "scheduled": [
+        "main",
+        "affected_agents"
+      ],
+      "daily": [
+        "main",
+        "all_agents"
+      ]
+    }
+  },
+  "coordination": {
+    "task_routing": {
+      "market_research": ["research", "seo"],
+      "content_management": ["web-posting", "seo"],
+      "security_audit": ["security", "integration"],
+      "performance_analysis": ["analytics", "research"],
+      "customer_communication": ["email-manager", "web-posting"],
+      "system_maintenance": ["integration", "security"]
+    },
+    "dependencies": {
+      "critical_path": [
+        "security -> integration -> analytics",
+        "research -> seo -> web-posting",
+        "analytics -> research -> main"
+      ],
+      "support_path": [
+        "email-manager -> analytics -> web-posting",
+        "seo -> research -> analytics"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "email": {
+    "service": "gmail",
+    "auth": {
+      "user": "premiummedscollective@gmail.com",
+      "type": "oauth2"
+    },
+    "required_env_vars": [
+      "GMAIL_CLIENT_ID",
+      "GMAIL_CLIENT_SECRET",
+      "GMAIL_REFRESH_TOKEN",
+      "GMAIL_ACCESS_TOKEN"
+    ]
+  },
+  "defaults": {
+    "from": "Premium Meds Collective <premiummedscollective@gmail.com>",
+    "replyTo": "premiummedscollective@gmail.com"
+  }
+}

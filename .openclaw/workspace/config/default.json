@@ -1,0 +1,20 @@
+{
+  "gmail": {
+    "clientId": "",
+    "clientSecret": "",
+    "redirectUri": "http://localhost:3000/oauth2callback",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.readonly",
+      "https://www.googleapis.com/auth/gmail.send",
+      "https://www.googleapis.com/auth/gmail.modify"
+    ],
+    "tokenStorage": {
+      "type": "secure",
+      "path": "~/.openclaw/secure/gmail"
+    },
+    "rateLimit": {
+      "maxRequests": 100,
+      "perMinute": 60
+    }
+  }
+}

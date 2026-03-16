@@ -1,0 +1,19 @@
+{
+  "publishes": {
+    "ubuntu-torque-8j67": {
+      "siteUrl": "https://ubuntu-torque-8j67.here.now/"
+    },
+    "silken-brook-geaq": {
+      "siteUrl": "https://silken-brook-geaq.here.now/"
+    },
+    "emerald-gorge-vhe3": {
+      "siteUrl": "https://emerald-gorge-vhe3.here.now/"
+    },
+    "ancient-maple-k5p3": {
+      "siteUrl": "https://ancient-maple-k5p3.here.now/"
+    },
+    "brave-yacht-23dk": {
+      "siteUrl": "https://brave-yacht-23dk.here.now/"
+    }
+  }
+}

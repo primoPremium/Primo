@@ -1,0 +1,85 @@
+{
+  "id": "marketing",
+  "name": "Marketing Director",
+  "description": "Strategic marketing agent for Premium Meds' brand development and market presence",
+  "version": "1.0.0",
+  "capabilities": {
+    "web_search": true,
+    "browser": true,
+    "memory_search": true,
+    "memory_get": true
+  },
+  "schedule": {
+    "daily": [
+      {
+        "time": "08:00",
+        "task": "campaign_review",
+        "script": "scripts/review_campaigns.py"
+      },
+      {
+        "time": "16:00",
+        "task": "performance_analysis",
+        "script": "scripts/analyze_performance.py"
+      }
+    ],
+    "weekly": [
+      {
+        "day": "Monday",
+        "time": "09:00",
+        "task": "campaign_planning"
+      },
+      {
+        "day": "Friday",
+        "time": "15:00",
+        "task": "weekly_marketing_report"
+      }
+    ],
+    "monthly": [
+      {
+        "day": 1,
+        "time": "10:00",
+        "task": "strategy_review"
+      }
+    ]
+  },
+  "marketing_focus": {
+    "channels": [
+      "social_media",
+      "email_marketing",
+      "website_content",
+      "local_advertising",
+      "seo_optimization"
+    ],
+    "priorities": [
+      "brand_awareness",
+      "customer_acquisition",
+      "loyalty_programs",
+      "market_expansion",
+      "customer_education"
+    ],
+    "metrics": [
+      "campaign_roi",
+      "customer_acquisition_cost",
+      "conversion_rates",
+      "brand_engagement",
+      "market_penetration"
+    ]
+  },
+  "memory": {
+    "paths": [
+      "memory/marketing/campaigns",
+      "memory/marketing/content",
+      "memory/marketing/budget",
+      "memory/marketing/analytics",
+      "memory/marketing/brand"
+    ]
+  },
+  "interactions": {
+    "ceo": ["strategy_approval", "performance_reports"],
+    "research": ["market_insights", "competitor_analysis"],
+    "web-posting": ["content_strategy", "campaign_execution"],
+    "analytics": ["campaign_metrics", "roi_analysis"],
+    "seo": ["search_optimization", "keyword_strategy"]
+  },
+  "reporting_to": "ceo"
+}

@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.19-2",
+    "lastTouchedAt": "2026-02-25T04:25:18.453Z"
+  },
+  "models": {
+    "providers": {
+      "openrouter": {
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "apiKey": "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",
+        "api": "openai-responses",
+        "models": [
+          {
+            "id": "openrouter/free",
+            "name": "OpenRouter Auto Free",
+            "contextWindow": 131072,
+            "maxTokens": 512
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openrouter/anthropic/claude-3.5-sonnet"
+      },
+      "models": {
+        "openrouter/anthropic/claude-3.5-sonnet": {
+          "params": {
+            "maxTokens": 2048
+          }
+        },
+        "openrouter/openrouter/free": {
+          "params": {
+            "maxTokens": 256,
+            "maxOutputTokens": 256
+          }
+        }
+      },
+      "workspace": "~/.openclaw/workspace",
+      "skipBootstrap": true,
+      "bootstrapMaxChars": 8000
+    }
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "provider": "brave"
+      }
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "open",
+      "botToken": "8479007093:AAHgSD0mP7k2_4iQAio2x3LquSDBotlZx8U",
+      "allowFrom": [
+        "*",
+        "8451594534"
+      ],
+      "groupPolicy": "allowlist",
+      "streamMode": "partial"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "lan",
+    "auth": {
+      "mode": "token",
+      "token": "e69755ed8dc40202f83f465d31e96ae1d08ff11d78407fc6"
+    }
+  },
+  "plugins": {
+    "entries": {
+      "telegram": {
+        "enabled": true
+      },
+      "device-pair": {
+        "config": {
+          "publicUrl": "http://52.25.23.10:18789"
+        }
+      }
+    }
+  }
+}

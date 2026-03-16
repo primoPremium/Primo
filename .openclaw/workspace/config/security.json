@@ -1,0 +1,25 @@
+{
+  "security": {
+    "tokenEncryption": {
+      "algorithm": "aes-256-gcm",
+      "keyDerivation": "pbkdf2"
+    },
+    "tokenRotation": {
+      "refreshTokenMaxAge": "30d",
+      "accessTokenMaxAge": "1h"
+    },
+    "rateLimiting": {
+      "enabled": true,
+      "maxAttempts": 5,
+      "windowMs": 300000
+    },
+    "logging": {
+      "level": "info",
+      "sensitiveFields": [
+        "access_token",
+        "refresh_token",
+        "client_secret"
+      ]
+    }
+  }
+}

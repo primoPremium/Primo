@@ -1,0 +1,17 @@
+{
+  "name": "woocommerce-api-skill",
+  "version": "1.0.0",
+  "description": "WooCommerce API skill for OpenClaw",
+  "main": "scripts/wc-api-client.js",
+  "dependencies": {
+    "node-fetch": "^2.7.0",
+    "oauth-1.0a": "^2.2.6"
+  },
+  "scripts": {
+    "postinstall": "mkdir -p logs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

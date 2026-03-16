@@ -1,0 +1,18 @@
+{
+  "id": "ceo",
+  "schedule_updates": {
+    "daily": [
+      {
+        "time": "16:00",
+        "task": "marketing_review",
+        "script": "scripts/marketing_review.py",
+        "output": {
+          "type": "group_report",
+          "target": "-1003809781298",
+          "platform": "telegram",
+          "format": "markdown"
+        }
+      }
+    ]
+  }
+}

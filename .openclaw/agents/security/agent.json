@@ -1,0 +1,59 @@
+{
+  "id": "security",
+  "name": "Security Agent",
+  "description": "Monitors security and compliance",
+  "version": "1.0.0",
+  "capabilities": {
+    "healthcheck": true,
+    "exec": true
+  },
+  "schedule": {
+    "daily": [
+      {
+        "time": "00:00",
+        "task": "security_audit",
+        "script": "scripts/security_audit.sh"
+      },
+      {
+        "time": "06:00",
+        "task": "compliance_check",
+        "script": "scripts/compliance_check.sh"
+      },
+      {
+        "time": "12:00",
+        "task": "access_log_review"
+      }
+    ],
+    "weekly": [
+      {
+        "day": "Monday",
+        "time": "01:00",
+        "task": "weekly_security_report"
+      }
+    ],
+    "monthly": [
+      {
+        "day": 1,
+        "time": "02:00",
+        "task": "monthly_compliance_audit"
+      }
+    ]
+  },
+  "memory": {
+    "paths": [
+      "memory/security/logs",
+      "memory/security/docs",
+      "memory/security/compliance"
+    ]
+  },
+  "alerts": {
+    "critical": {
+      "notify": true,
+      "escalate": true
+    },
+    "warning": {
+      "notify": true,
+      "escalate": false
+    }
+  }
+}

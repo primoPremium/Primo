@@ -1,0 +1,5 @@
+agents/main/sessions/
+workspace/skills/gmail/service-account.json
+client_secret.json
+*.jsonl.deleted.*
+*.jsonl.reset.*

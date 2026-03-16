@@ -1,0 +1,9 @@
+{
+  "name": "email-manager",
+  "version": "1.0.0",
+  "description": "Email manager agent for Premium Meds",
+  "main": "src/token_manager.js",
+  "dependencies": {
+    "@openclaw/secure-storage": "latest"
+  }
+}

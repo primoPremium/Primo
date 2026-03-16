@@ -1,0 +1,39 @@
+{
+  "id": "research",
+  "name": "Research Agent",
+  "description": "Specialized agent for market research and competitive analysis",
+  "version": "1.0.0",
+  "capabilities": {
+    "web_search": true,
+    "browser": true,
+    "memory_search": true,
+    "memory_get": true
+  },
+  "schedule": {
+    "daily": [
+      {
+        "time": "08:00",
+        "task": "daily_research_update"
+      },
+      {
+        "time": "16:00",
+        "task": "competitor_check"
+      }
+    ],
+    "weekly": [
+      {
+        "day": "Monday",
+        "time": "09:00",
+        "task": "weekly_research_report"
+      }
+    ]
+  },
+  "memory": {
+    "paths": [
+      "memory/research/daily",
+      "memory/research/competitors",
+      "memory/research/trends",
+      "memory/research/reports"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "initialized": true,
+  "defaultFrom": "OpenClaw System <system@premiummedscollective.com>",
+  "smtp": {
+    "host": "smtp.premiummedscollective.com",
+    "port": 587,
+    "secure": true
+  },
+  "testEmail": "bweldy82@gmail.com"
+}

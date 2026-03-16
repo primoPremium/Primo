@@ -1,0 +1,29 @@
+{
+  "main": {
+    "can_delegate": true,
+    "allowed_agents": [
+      "task-rabbit",
+      "marketing",
+      "seo",
+      "analytics",
+      "web-posting",
+      "email-manager",
+      "security",
+      "research",
+      "ice"
+    ],
+    "delegation_protocols": {
+      "require_tracking": true,
+      "require_monitoring": true,
+      "require_reporting": true
+    }
+  },
+  "task-rabbit": {
+    "can_monitor": true,
+    "can_coordinate": true,
+    "reporting_channel": "telegram:-1003809781298",
+    "monitoring_interval": 300,
+    "alert_threshold": 900,
+    "max_task_duration": 14400
+  }
+}

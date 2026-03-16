@@ -1,0 +1,19 @@
+{
+  "total_active_products": 72,
+  "category_counts": {
+    "Pre-rolled (Joints/Blunts)": 20,
+    "Indica Flower": 2,
+    "Micro-dose": 6,
+    "Vape Cartridges": 22,
+    "Concentrates/Wax": 11,
+    "Sativa Flower": 3,
+    "Edible": 5,
+    "Hybrid Flower": 3,
+    "Specials": 1
+  },
+  "stock_status": {
+    "instock": 72,
+    "outofstock": 0,
+    "onbackorder": 0
+  }
+}

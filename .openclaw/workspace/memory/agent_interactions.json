@@ -1,0 +1,92 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2024-03-04",
+  "agent_interactions": {
+    "main": {
+      "role": "orchestrator",
+      "delegates_to": ["research", "web-posting", "security", "analytics", "email-manager", "seo", "integration"],
+      "coordinates": ["cross-agent tasks", "emergency responses", "strategic decisions"]
+    },
+    "research": {
+      "provides": ["market_data", "competitor_analysis", "industry_trends"],
+      "consumes": [
+        {"from": "seo", "data": ["keyword_trends", "search_patterns"]},
+        {"from": "analytics", "data": ["sales_patterns", "customer_behavior"]},
+        {"from": "web-posting", "data": ["content_performance"]}
+      ],
+      "notifies": ["main", "analytics", "web-posting"]
+    },
+    "web-posting": {
+      "provides": ["content_updates", "social_metrics", "website_status"],
+      "consumes": [
+        {"from": "seo", "data": ["optimization_recommendations"]},
+        {"from": "research", "data": ["market_insights"]},
+        {"from": "analytics", "data": ["performance_metrics"]}
+      ],
+      "notifies": ["main", "seo", "analytics"]
+    },
+    "security": {
+      "provides": ["security_status", "compliance_updates", "threat_alerts"],
+      "consumes": [
+        {"from": "integration", "data": ["api_security_metrics"]},
+        {"from": "email-manager", "data": ["suspicious_patterns"]},
+        {"from": "analytics", "data": ["anomaly_detection"]}
+      ],
+      "notifies": ["main", "integration", "email-manager"]
+    },
+    "analytics": {
+      "provides": ["performance_metrics", "sales_data", "trend_analysis"],
+      "consumes": [
+        {"from": "research", "data": ["market_data"]},
+        {"from": "web-posting", "data": ["engagement_metrics"]},
+        {"from": "integration", "data": ["system_metrics"]}
+      ],
+      "notifies": ["main", "research", "web-posting"]
+    },
+    "email-manager": {
+      "provides": ["communication_metrics", "customer_feedback", "priority_alerts"],
+      "consumes": [
+        {"from": "security", "data": ["security_alerts"]},
+        {"from": "analytics", "data": ["customer_metrics"]},
+        {"from": "web-posting", "data": ["content_updates"]}
+      ],
+      "notifies": ["main", "security", "analytics"]
+    },
+    "seo": {
+      "provides": ["ranking_data", "optimization_suggestions", "search_trends"],
+      "consumes": [
+        {"from": "research", "data": ["competitor_insights"]},
+        {"from": "web-posting", "data": ["content_changes"]},
+        {"from": "analytics", "data": ["traffic_sources"]}
+      ],
+      "notifies": ["main", "web-posting", "research"]
+    },
+    "integration": {
+      "provides": ["system_status", "api_metrics", "integration_health"],
+      "consumes": [
+        {"from": "security", "data": ["security_requirements"]},
+        {"from": "analytics", "data": ["system_load"]},
+        {"from": "web-posting", "data": ["platform_updates"]}
+      ],
+      "notifies": ["main", "security", "analytics"]
+    }
+  },
+  "communication_channels": {
+    "critical_alerts": {
+      "primary": "security",
+      "subscribers": ["main", "integration", "email-manager"]
+    },
+    "performance_metrics": {
+      "primary": "analytics",
+      "subscribers": ["main", "research", "seo"]
+    },
+    "market_updates": {
+      "primary": "research",
+      "subscribers": ["main", "web-posting", "seo"]
+    },
+    "system_status": {
+      "primary": "integration",
+      "subscribers": ["main", "security", "analytics"]
+    }
+  }
+}

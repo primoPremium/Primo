@@ -1,0 +1,55 @@
+{
+  "id": "seo",
+  "name": "SEO Agent",
+  "description": "Specialized agent for search engine optimization and ranking analysis",
+  "version": "1.0.0",
+  "capabilities": {
+    "web_search": true,
+    "browser": true,
+    "memory_search": true,
+    "memory_get": true
+  },
+  "schedule": {
+    "daily": [
+      {
+        "time": "23:00",
+        "task": "keyword_position_check",
+        "script": "scripts/check_rankings.py"
+      }
+    ],
+    "weekly": [
+      {
+        "day": "Monday",
+        "time": "01:00",
+        "task": "competitor_seo_analysis",
+        "script": "scripts/analyze_competitors.py"
+      },
+      {
+        "day": "Thursday",
+        "time": "02:00",
+        "task": "content_optimization_review"
+      }
+    ],
+    "monthly": [
+      {
+        "day": 1,
+        "time": "03:00",
+        "task": "seo_strategy_report"
+      }
+    ]
+  },
+  "memory": {
+    "paths": [
+      "memory/seo/rankings",
+      "memory/seo/reports",
+      "memory/seo/keywords",
+      "memory/seo/analytics",
+      "memory/seo/competitors"
+    ]
+  },
+  "interactions": {
+    "web-posting": ["content_optimization", "keyword_strategies"],
+    "research": ["market_trends", "competitor_analysis"],
+    "analytics": ["traffic_data", "conversion_metrics"]
+  }
+}

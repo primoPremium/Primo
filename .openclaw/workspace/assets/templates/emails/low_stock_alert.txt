@@ -1,0 +1,23 @@
+Subject: Low Stock Alert - {product_name}
+
+Dear Admin,
+
+This is an automated alert to inform you that the following product has reached a low stock level:
+
+Product: {product_name}
+Current Stock: {current_stock}
+Alert Threshold: {threshold}
+SKU: {sku}
+
+Action Required:
+- Review current stock levels
+- Place reorder if necessary
+- Update stock threshold if needed
+
+Quick Actions:
+- View Product: {product_url}
+- Update Stock: {admin_url}
+- Adjust Threshold: {settings_url}
+
+Best regards,
+WooCommerce Automation System

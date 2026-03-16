@@ -1,0 +1,33 @@
+{
+  "ceo": {
+    "role": "executive_leader",
+    "provides": ["strategic_direction", "performance_targets", "resource_allocation"],
+    "consumes": [
+      {"from": "marketing", "data": ["campaign_performance", "market_position"]},
+      {"from": "research", "data": ["market_insights", "competitive_analysis"]},
+      {"from": "analytics", "data": ["business_metrics", "growth_indicators"]},
+      {"from": "security", "data": ["risk_assessments", "compliance_status"]},
+      {"from": "ice", "data": ["system_health", "integration_status"]}
+    ],
+    "notifies": ["all_agents"],
+    "oversight": {
+      "direct_reports": ["marketing", "research", "analytics"],
+      "review_schedule": "daily",
+      "approval_required": ["strategic_changes", "budget_allocation", "major_campaigns"]
+    }
+  },
+  "marketing": {
+    "role": "marketing_director",
+    "provides": ["marketing_strategy", "campaign_management", "brand_development"],
+    "consumes": [
+      {"from": "ceo", "data": ["strategic_direction", "performance_targets"]},
+      {"from": "research", "data": ["market_insights", "competitor_analysis"]},
+      {"from": "analytics", "data": ["campaign_metrics", "customer_data"]},
+      {"from": "web-posting", "data": ["content_performance", "engagement_metrics"]},
+      {"from": "seo", "data": ["search_rankings", "keyword_performance"]}
+    ],
+    "notifies": ["ceo", "web-posting", "analytics"],
+    "reports_to": "ceo",
+    "coordinates": ["brand_message", "campaign_execution", "content_strategy"]
+  }
+}

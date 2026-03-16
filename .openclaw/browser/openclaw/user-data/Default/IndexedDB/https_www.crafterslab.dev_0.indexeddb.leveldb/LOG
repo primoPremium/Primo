@@ -1,0 +1,6 @@
+2026/03/15-09:21:51.687 37709 Creating DB /home/ubuntu/.openclaw/browser/openclaw/user-data/Default/IndexedDB/https_www.crafterslab.dev_0.indexeddb.leveldb since it was missing.
+2026/03/15-09:21:51.698 37709 Reusing MANIFEST /home/ubuntu/.openclaw/browser/openclaw/user-data/Default/IndexedDB/https_www.crafterslab.dev_0.indexeddb.leveldb/MANIFEST-000001
+2026/03/15-09:21:51.734 37711 Level-0 table #5: started
+2026/03/15-09:21:51.738 37711 Level-0 table #5: 1331 bytes OK
+2026/03/15-09:21:51.742 37711 Delete type=0 #3
+2026/03/15-09:21:51.743 37710 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

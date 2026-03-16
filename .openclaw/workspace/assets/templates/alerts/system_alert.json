@@ -1,0 +1,22 @@
+{
+  "title": "{alert_type} Alert",
+  "timestamp": "{timestamp}",
+  "priority": "{priority}",
+  "source": "{source}",
+  "message": "{message}",
+  "details": {
+    "error_code": "{error_code}",
+    "affected_items": [],
+    "impact": "{impact}",
+    "suggested_actions": []
+  },
+  "context": {
+    "system_status": {},
+    "related_events": []
+  },
+  "notification_targets": {
+    "email": [],
+    "slack": [],
+    "telegram": []
+  }
+}

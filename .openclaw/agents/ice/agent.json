@@ -1,0 +1,70 @@
+{
+  "id": "ice",
+  "name": "Integration & Connectivity Engine (ICE)",
+  "description": "Core system integration and connectivity management agent. Manages API connections, system integrations, and serves as the source of truth for credentials via .env",
+  "version": "1.0.0",
+  "capabilities": {
+    "exec": true,
+    "web_fetch": true,
+    "memory_search": true,
+    "memory_get": true
+  },
+  "env_management": {
+    "source_of_truth": "~/.env",
+    "managed_credentials": [
+      "WooCommerce API keys",
+      "Payment gateway credentials",
+      "Email service tokens",
+      "Analytics API keys",
+      "HERE_DOT_NOW_KEY",
+      "Database credentials",
+      "Third-party service tokens"
+    ],
+    "security": {
+      "access_control": "restricted",
+      "encryption": "required",
+      "backup": "encrypted"
+    }
+  },
+  "schedule": {
+    "hourly": [
+      {
+        "minute": 0,
+        "task": "api_health_check",
+        "script": "scripts/check_api_health.py"
+      }
+    ],
+    "daily": [
+      {
+        "time": "00:00",
+        "task": "integration_status_report"
+      },
+      {
+        "time": "12:00",
+        "task": "credential_validation",
+        "script": "scripts/validate_credentials.py"
+      }
+    ],
+    "weekly": [
+      {
+        "day": "Sunday",
+        "time": "02:00",
+        "task": "integration_maintenance"
+      }
+    ]
+  },
+  "memory": {
+    "paths": [
+      "memory/ice/apis",
+      "memory/ice/logs",
+      "memory/ice/configs",
+      "memory/ice/status",
+      "memory/ice/monitoring"
+    ]
+  },
+  "interactions": {
+    "security": ["api_security", "access_logs", "credential_status"],
+    "analytics": ["data_flow", "system_metrics"],
+    "web-posting": ["api_updates", "system_status"]
+  }
+}

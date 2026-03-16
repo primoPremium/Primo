@@ -1,0 +1,29 @@
+{
+  "title": "Sales Report - {period}",
+  "generated_at": "{timestamp}",
+  "summary": {
+    "total_orders": 0,
+    "total_revenue": 0.00,
+    "average_order_value": 0.00,
+    "comparison": {
+      "previous_period": {
+        "orders_change": "0%",
+        "revenue_change": "0%"
+      }
+    }
+  },
+  "status_distribution": {
+    "pending": 0,
+    "processing": 0,
+    "completed": 0,
+    "refunded": 0,
+    "cancelled": 0
+  },
+  "daily_revenue": {},
+  "top_products": [],
+  "metrics": {
+    "conversion_rate": "0%",
+    "cart_abandonment": "0%",
+    "repeat_customers": "0%"
+  }
+}

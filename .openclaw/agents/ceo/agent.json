@@ -1,0 +1,81 @@
+{
+  "id": "ceo",
+  "name": "Chief Executive Officer",
+  "description": "Executive oversight agent for Premium Meds' strategic direction and performance monitoring",
+  "version": "1.0.0",
+  "capabilities": {
+    "web_search": true,
+    "browser": true,
+    "memory_search": true,
+    "memory_get": true,
+    "sessions_spawn": true
+  },
+  "schedule": {
+    "daily": [
+      {
+        "time": "09:00",
+        "task": "daily_performance_review",
+        "script": "scripts/review_performance.py"
+      },
+      {
+        "time": "17:00",
+        "task": "end_of_day_summary",
+        "script": "scripts/generate_summary.py"
+      }
+    ],
+    "weekly": [
+      {
+        "day": "Monday",
+        "time": "08:00",
+        "task": "weekly_strategy_review"
+      },
+      {
+        "day": "Friday",
+        "time": "16:00",
+        "task": "weekly_executive_report"
+      }
+    ],
+    "monthly": [
+      {
+        "day": 1,
+        "time": "09:00",
+        "task": "monthly_performance_analysis"
+      }
+    ]
+  },
+  "oversight": {
+    "direct_reports": [
+      "marketing",
+      "research",
+      "analytics"
+    ],
+    "monitored_metrics": [
+      "revenue_growth",
+      "market_share",
+      "customer_satisfaction",
+      "operational_efficiency"
+    ],
+    "strategic_focus": [
+      "market_expansion",
+      "brand_development",
+      "customer_experience",
+      "competitive_positioning"
+    ]
+  },
+  "memory": {
+    "paths": [
+      "memory/ceo/reports",
+      "memory/ceo/strategies",
+      "memory/ceo/kpis",
+      "memory/ceo/reviews",
+      "memory/ceo/objectives"
+    ]
+  },
+  "interactions": {
+    "marketing": ["strategy_direction", "performance_review"],
+    "research": ["market_insights", "competitive_analysis"],
+    "analytics": ["business_metrics", "growth_indicators"],
+    "security": ["risk_assessments", "compliance_status"],
+    "ice": ["system_health", "integration_status"]
+  }
+}

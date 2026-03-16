@@ -1,0 +1,45 @@
+{
+  "id": "email-manager",
+  "name": "Email Management Agent",
+  "description": "Specialized agent for email monitoring and communication management",
+  "version": "1.0.0",
+  "capabilities": {
+    "exec": true,
+    "memory_search": true,
+    "memory_get": true
+  },
+  "schedule": {
+    "daily": [
+      {
+        "time": "08:00",
+        "task": "priority_inbox_check",
+        "script": "scripts/check_priority_inbox.py"
+      },
+      {
+        "time": "16:00",
+        "task": "daily_email_summary"
+      }
+    ],
+    "weekly": [
+      {
+        "day": "Wednesday",
+        "time": "06:00",
+        "task": "weekly_email_report",
+        "script": "scripts/generate_email_report.py"
+      }
+    ]
+  },
+  "memory": {
+    "paths": [
+      "memory/email/inbox",
+      "memory/email/reports",
+      "memory/email/analytics",
+      "memory/email/templates"
+    ]
+  },
+  "interactions": {
+    "analytics": ["communication_metrics"],
+    "security": ["email_security_logs"],
+    "web-posting": ["content_requests", "customer_feedback"]
+  }
+}

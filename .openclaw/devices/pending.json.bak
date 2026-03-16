@@ -1,0 +1,22 @@
+{
+  "11e81415-571d-45b5-b983-f63b37f05b14": {
+    "requestId": "11e81415-571d-45b5-b983-f63b37f05b14",
+    "deviceId": "87e34a6b1c3d0fb0d97d98f517fea62efafd53e8c6e0890bd4e24faa4c416e9e",
+    "publicKey": "H18LuKG4V-4v2lJed_hOewqk8E2Pg547UJDYWTIHRsk",
+    "platform": "linux",
+    "clientId": "cli",
+    "clientMode": "cli",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "silent": false,
+    "isRepair": true,
+    "ts": 1772172562542
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "web-posting",
+  "name": "Web Posting Agent",
+  "description": "Manages website updates and content publishing",
+  "version": "1.0.0",
+  "capabilities": {
+    "browser": true,
+    "web_fetch": true
+  },
+  "schedule": {
+    "daily": [
+      {
+        "time": "09:00",
+        "task": "website_health_check"
+      },
+      {
+        "time": "10:00",
+        "task": "social_media_posting"
+      },
+      {
+        "time": "14:00",
+        "task": "engagement_monitoring"
+      }
+    ],
+    "weekly": [
+      {
+        "day": "Monday",
+        "time": "08:00",
+        "task": "content_calendar_update"
+      },
+      {
+        "day": "Friday",
+        "time": "16:00",
+        "task": "weekly_performance_report"
+      }
+    ]
+  },
+  "memory": {
+    "paths": [
+      "memory/web-content/templates",
+      "memory/web-content/published",
+      "memory/web-content/drafts",
+      "memory/web-content/analytics"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@openclaw/skill-gmail",
+  "version": "1.0.0",
+  "description": "Gmail integration skill for OpenClaw",
+  "main": "scripts/gmail.js",
+  "scripts": {
+    "test": "mocha tests/**/*.test.js",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "googleapis": "^128.0.0",
+    "@openclaw/secure-storage": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "sinon": "^15.0.1",
+    "eslint": "^8.40.0"
+  },
+  "keywords": [
+    "openclaw",
+    "gmail",
+    "email",
+    "oauth2"
+  ],
+  "author": "OpenClaw",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openclaw/skill-gmail.git"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "account": "premiummedscollective@gmail.com",
+  "auth": {
+    "type": "oauth2",
+    "credentials_source": "~/.env",
+    "required_vars": [
+      "GOOGLE_CLIENT_ID",
+      "GOOGLE_CLIENT_SECRET",
+      "WP_CRED_USER"
+    ]
+  },
+  "skill_path": "~/.openclaw/workspace/skills/email-suite/",
+  "templates_path": "~/.openclaw/workspace/skills/email-suite/templates/",
+  "browser_integration": {
+    "required": true,
+    "profile": "openclaw",
+    "screenshot_enabled": true
+  },
+  "reporting": {
+    "chat_notifications": true,
+    "log_auth_attempts": true,
+    "status_updates": true
+  },
+  "last_verified": "2026-03-05",
+  "status": "operational"
+}

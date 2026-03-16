@@ -1,0 +1,31 @@
+{
+  "agent_signatures": {
+    "ceo": {
+      "format": "\n\n🤖 Chief Executive Officer\n👔 THANK YOU FOR YOUR ATTENTION TO THIS MATTER!!!\n~Premium Meds Collective~"
+    },
+    "marketing": {
+      "format": "\n\n🤖 Marketing Director\n📢 Crafting Premium Experiences\n~Premium Meds Collective~"
+    },
+    "research": {
+      "format": "\n\n🤖 Research Analyst\n🔍 Insights That Drive Success\n~Premium Meds Collective~"
+    },
+    "web-posting": {
+      "format": "\n\n🤖 Content Manager\n📝 Engaging Digital Presence\n~Premium Meds Collective~"
+    },
+    "security": {
+      "format": "\n\n🤖 Security Officer\n🛡️ Protecting Our Digital Assets\n~Premium Meds Collective~"
+    },
+    "ice": {
+      "format": "\n\n🤖 Integration & Connectivity Engine\n⚡ Powering Seamless Operations\n~Premium Meds Collective~"
+    },
+    "seo": {
+      "format": "\n\n🤖 SEO Specialist\n🎯 Maximizing Digital Visibility\n~Premium Meds Collective~"
+    },
+    "analytics": {
+      "format": "\n\n🤖 Analytics Director\n📊 Data-Driven Excellence\n~Premium Meds Collective~"
+    },
+    "email-manager": {
+      "format": "\n\n🤖 Communications Manager\n📧 Connecting With Purpose\n~Premium Meds Collective~"
+    }
+  }
+}

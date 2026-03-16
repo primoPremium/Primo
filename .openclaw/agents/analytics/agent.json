@@ -1,0 +1,54 @@
+{
+  "id": "analytics",
+  "name": "Analytics Agent",
+  "description": "Specialized agent for sales analysis, metrics tracking, and performance reporting",
+  "version": "1.0.0",
+  "capabilities": {
+    "web_search": true,
+    "browser": true,
+    "memory_search": true,
+    "memory_get": true,
+    "exec": true
+  },
+  "schedule": {
+    "daily": [
+      {
+        "time": "22:00",
+        "task": "daily_sales_analysis",
+        "script": "scripts/analyze_sales.py"
+      },
+      {
+        "time": "23:00",
+        "task": "inventory_check",
+        "script": "scripts/check_inventory.py"
+      }
+    ],
+    "weekly": [
+      {
+        "day": "Monday",
+        "time": "05:00",
+        "task": "weekly_performance_report"
+      }
+    ],
+    "monthly": [
+      {
+        "day": 1,
+        "time": "06:00",
+        "task": "monthly_analytics_report"
+      }
+    ]
+  },
+  "memory": {
+    "paths": [
+      "memory/analytics/daily",
+      "memory/analytics/weekly",
+      "memory/analytics/monthly",
+      "memory/analytics/metrics"
+    ]
+  },
+  "interactions": {
+    "research": ["market_data", "competitor_prices"],
+    "web-posting": ["performance_metrics", "sales_data"],
+    "security": ["access_logs", "transaction_security"]
+  }
+}

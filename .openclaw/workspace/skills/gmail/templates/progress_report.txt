@@ -1,0 +1,27 @@
+Subject: Premium Meds Marketing Progress Report - {project}
+
+Project Status Update
+════════════════════
+
+🎯 PROJECT: {project}
+📅 DATE: {date}
+📍 PHASE: {phase}
+
+✅ COMPLETED
+──────────────
+{completed_items}
+
+🔄 IN PROGRESS
+──────────────
+{in_progress_items}
+
+⏳ UPCOMING
+──────────────
+{upcoming_items}
+
+📈 METRICS
+──────────
+{metrics}
+
+Best regards,
+Premium Meds Marketing Team
