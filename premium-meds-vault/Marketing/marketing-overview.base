@@ -1,0 +1,56 @@
+filters:
+  and:
+    - file.hasTag("campaign")
+    - 'file.ext == "md"'
+
+formulas:
+  days_active: 'if(launch_date, (today() - date(launch_date)).days, 0)'
+  roi_percentage: 'if(cost && revenue, ((revenue - cost) / cost * 100).toFixed(1) + "%", "N/A")'
+  status_icon: 'if(status == "active", "🟢", if(status == "planned", "🟡", "⏸️"))'
+
+properties:
+  campaign_name:
+    displayName: "Campaign Name"
+  status:
+    displayName: "Status"
+  formula.status_icon:
+    displayName: ""
+  formula.days_active:
+    displayName: "Days Active"
+  formula.roi_percentage:
+    displayName: "ROI %"
+  target_audience:
+    displayName: "Target Audience"
+  budget:
+    displayName: "Budget"
+
+views:
+  - type: table
+    name: "Active Campaigns"
+    filters:
+      and:
+        - 'status == "active"'
+    order:
+      - campaign_name
+      - formula.status_icon
+      - launch_date
+      - formula.days_active
+      - budget
+      - formula.roi_percentage
+    groupBy:
+      property: target_audience
+      direction: ASC
+    summaries:
+      budget: Sum
+      formula.roi_percentage: Average
+
+  - type: table
+    name: "Campaign Pipeline"
+    filters:
+      and:
+        - 'status == "planned"'
+    order:
+      - campaign_name
+      - planned_launch_date
+      - target_audience
+      - budget

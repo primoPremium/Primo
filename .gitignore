@@ -24,6 +24,9 @@ node_modules/
 # snap
 snap/
 
+# git
+.gitignore
+
 # openclaw large/generated stuff
 .openclaw/google-chrome-stable_current_amd64.deb
 .openclaw/workspace/*.tar.gz
@@ -50,3 +53,10 @@ snap/
 .lesshst
 .wget-hsts
 .sudo_as_admin_successful
+.bash_logout
+.bashrc
+.openclawignore
+
+package-lock.json
+
+.openclaw/workspace/skills/gmail/service-account.json
