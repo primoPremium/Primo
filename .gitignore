@@ -60,3 +60,5 @@ snap/
 package-lock.json
 
 .openclaw/workspace/skills/gmail/service-account.json
+.openclaw/openclaw.json
+.openclaw/*.local.json
