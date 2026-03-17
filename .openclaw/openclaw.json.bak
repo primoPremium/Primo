@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.11",
-    "lastTouchedAt": "2026-03-13T13:46:29.274Z"
+    "lastTouchedAt": "2026-03-17T05:45:28.019Z"
   },
   "browser": {
     "enabled": true,
@@ -9,6 +9,14 @@
     "headless": true,
     "noSandbox": true,
     "defaultProfile": "openclaw"
+  },
+  "auth": {
+    "profiles": {
+      "openrouter:default": {
+        "provider": "openrouter",
+        "mode": "api_key"
+      }
+    }
   },
   "models": {
     "providers": {
@@ -30,7 +38,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "openrouter/openrouter/free"
+        "primary": "openrouter/auto"
       },
       "models": {
         "openrouter/anthropic/claude-3.5-sonnet": {
@@ -43,6 +51,9 @@
             "maxTokens": 256,
             "maxOutputTokens": 256
           }
+        },
+        "openrouter/auto": {
+          "alias": "OpenRouter"
         }
       },
       "workspace": "~/.openclaw/workspace",
@@ -51,6 +62,7 @@
     }
   },
   "tools": {
+    "profile": "coding",
     "web": {
       "search": {
         "provider": "brave"
@@ -86,6 +98,10 @@
     "auth": {
       "mode": "token",
       "token": "e69755ed8dc40202f83f465d31e96ae1d08ff11d78407fc6"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
     }
   },
   "plugins": {
