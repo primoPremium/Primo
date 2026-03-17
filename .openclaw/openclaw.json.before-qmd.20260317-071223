@@ -1,0 +1,127 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.11",
+    "lastTouchedAt": "2026-03-17T05:46:50.701Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-17T05:46:50.677Z",
+    "lastRunVersion": "2026.3.11",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "browser": {
+    "enabled": true,
+    "executablePath": "/usr/bin/google-chrome-stable",
+    "headless": true,
+    "noSandbox": true,
+    "defaultProfile": "openclaw"
+  },
+  "auth": {
+    "profiles": {
+      "openrouter:default": {
+        "provider": "openrouter",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "providers": {
+      "openrouter": {
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "apiKey": "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",
+        "api": "openai-responses",
+        "models": [
+          {
+            "id": "openrouter/free",
+            "name": "OpenRouter Auto Free",
+            "contextWindow": 131072,
+            "maxTokens": 512
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openrouter/auto"
+      },
+      "models": {
+        "openrouter/anthropic/claude-3.5-sonnet": {
+          "params": {
+            "maxTokens": 2048
+          }
+        },
+        "openrouter/openrouter/free": {
+          "params": {
+            "maxTokens": 256,
+            "maxOutputTokens": 256
+          }
+        },
+        "openrouter/auto": {
+          "alias": "OpenRouter"
+        }
+      },
+      "workspace": "~/.openclaw/workspace",
+      "skipBootstrap": true,
+      "bootstrapMaxChars": 8000
+    }
+  },
+  "tools": {
+    "profile": "coding",
+    "web": {
+      "search": {
+        "enabled": true,
+        "provider": "brave",
+        "apiKey": "BSAP0Ui4aB7wS9BYqfKev6LB7nEQSKf"
+      }
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "open",
+      "botToken": "8479007093:AAHgSD0mP7k2_4iQAio2x3LquSDBotlZx8U",
+      "allowFrom": [
+        "*",
+        "8451594534"
+      ],
+      "groupPolicy": "allowlist",
+      "streaming": "partial"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "e69755ed8dc40202f83f465d31e96ae1d08ff11d78407fc6"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "plugins": {
+    "entries": {
+      "telegram": {
+        "enabled": true
+      },
+      "device-pair": {
+        "config": {
+          "publicUrl": "http://52.25.23.10:18789"
+        }
+      }
+    }
+  }
+}

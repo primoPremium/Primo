@@ -1,0 +1,13 @@
+collections:
+  memory-root-main:
+    path: /home/ubuntu/.openclaw/workspace
+    pattern: MEMORY.md
+  memory-alt-main:
+    path: /home/ubuntu/.openclaw/workspace
+    pattern: memory.md
+  memory-dir-main:
+    path: /home/ubuntu/.openclaw/workspace/memory
+    pattern: "**/*.md"
+  notes-main:
+    path: /home/ubuntu/notes
+    pattern: "**/*.md"
