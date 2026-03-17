@@ -64,3 +64,6 @@ package-lock.json
 .openclaw/*.local.json
 .venvs/
 git-secret-backups/
+.openclaw/identity/
+.openclaw/device-auth.json
+.openclaw/identity/device-auth.json
