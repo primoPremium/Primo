@@ -23,6 +23,9 @@ Located in ~/.openclaw/agents/:
 - Analytics Agent: Performance metrics and data analysis
 - Web-Posting Agent: Content distribution and management
 
+### Group Engagement
+- Chatty-Cathy (Cathy) Agent: Real-time group chat presence, auto-acknowledgment, escalation to owner
+
 ### Support Operations
 - Email-Manager Agent: Communication management
 - Security Agent: Compliance and risk management
