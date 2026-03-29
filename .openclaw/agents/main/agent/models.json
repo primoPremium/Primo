@@ -8,18 +8,7 @@
           "id": "openrouter/free",
           "name": "OpenRouter Auto Free",
           "contextWindow": 131072,
-          "maxTokens": 512,
-          "reasoning": false,
-          "input": [
-            "text"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0,
-            "cacheRead": 0,
-            "cacheWrite": 0
-          },
-          "api": "openai-responses"
+          "maxTokens": 512
         },
         {
           "id": "auto",

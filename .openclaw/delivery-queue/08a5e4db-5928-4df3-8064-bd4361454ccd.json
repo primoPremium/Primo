@@ -1,0 +1,21 @@
+{
+  "id": "08a5e4db-5928-4df3-8064-bd4361454ccd",
+  "enqueuedAt": 1773778865235,
+  "channel": "telegram",
+  "to": "group:-1003809781298",
+  "payloads": [
+    {
+      "text": "Proceeding to set up a weekly cadence at Monday 11:30 AM PST with 2 OC-flavored rotating jokes. I’ll route this to the Marketing Agent for content prep and the Web-Posting Agent for scheduling, with Task-Rabbit monitoring and final confirmation back to you. I’ll report back with the scheduled posts and any content drafts for review."
+    }
+  ],
+  "threadId": null,
+  "mirror": {
+    "sessionKey": "agent:main:telegram:direct:group:-1003809781298",
+    "agentId": "main",
+    "text": "Proceeding to set up a weekly cadence at Monday 11:30 AM PST with 2 OC-flavored rotating jokes. I’ll route this to the Marketing Agent for content prep and the Web-Posting Agent for scheduling, with Task-Rabbit monitoring and final confirmation back to you. I’ll report back with the scheduled posts and any content drafts for review.",
+    "idempotencyKey": "8246e759-b27e-4772-8be5-610c36136fa4"
+  },
+  "retryCount": 2,
+  "lastAttemptAt": 1773779888198,
+  "lastError": "Telegram recipient must be a numeric chat ID"
+}

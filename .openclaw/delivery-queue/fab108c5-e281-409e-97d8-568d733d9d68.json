@@ -1,0 +1,21 @@
+{
+  "id": "fab108c5-e281-409e-97d8-568d733d9d68",
+  "enqueuedAt": 1773780335450,
+  "channel": "telegram",
+  "to": "group:-1003809781298",
+  "payloads": [
+    {
+      "text": "Acknowledged. Proceeding with the established delegation and daily update cadence:\n\n- Marketing Joke cadence: weekly, Mondays at 11:30 AM PST, with 2 OC-flavored rotating jokes preloaded; current post kept as kicker\n- Daily Update cadence: 08:45 AM PST daily in the group channel; real-time replies to mentions\n- Deliverables in flight: scheduling confirmations, draft jokes for Joke 1 and Joke 2, and status reports from Task-Rabbit\n\nIf you want any adjustments (tone, references, times), say the word and I’ll apply before finalizing."
+    }
+  ],
+  "threadId": null,
+  "mirror": {
+    "sessionKey": "agent:main:telegram:direct:group:-1003809781298",
+    "agentId": "main",
+    "text": "Acknowledged. Proceeding with the established delegation and daily update cadence:\n\n- Marketing Joke cadence: weekly, Mondays at 11:30 AM PST, with 2 OC-flavored rotating jokes preloaded; current post kept as kicker\n- Daily Update cadence: 08:45 AM PST daily in the group channel; real-time replies to mentions\n- Deliverables in flight: scheduling confirmations, draft jokes for Joke 1 and Joke 2, and status reports from Task-Rabbit\n\nIf you want any adjustments (tone, references, times), say the word and I’ll apply before finalizing.",
+    "idempotencyKey": "6c727dcf-fe0f-4237-811b-fb70eb5ecbbc"
+  },
+  "retryCount": 1,
+  "lastAttemptAt": 1773780335453,
+  "lastError": "Telegram recipient must be a numeric chat ID"
+}

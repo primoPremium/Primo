@@ -1,0 +1,21 @@
+{
+  "id": "d63154ee-c567-4eb9-b944-0c735efcac96",
+  "enqueuedAt": 1773780880154,
+  "channel": "telegram",
+  "to": "group:-1003809781298",
+  "payloads": [
+    {
+      "text": "REPLY_SKIP"
+    }
+  ],
+  "threadId": null,
+  "mirror": {
+    "sessionKey": "agent:main:telegram:direct:group:-1003809781298",
+    "agentId": "main",
+    "text": "REPLY_SKIP",
+    "idempotencyKey": "9f6ab814-536f-4e69-ba89-0852673789ae"
+  },
+  "retryCount": 1,
+  "lastAttemptAt": 1773780880156,
+  "lastError": "Telegram recipient must be a numeric chat ID"
+}

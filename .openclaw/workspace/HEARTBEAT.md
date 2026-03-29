@@ -49,7 +49,7 @@
 ║ 🔄 DAILY PROGRESS REPORTING         ║
 ╚══════════════════════════════════════╝
 ```
-⏰ **Schedule**: Daily at 9:00 AM PT
+⏰ **Schedule**: Daily at 8:45 AM PST
 📋 **Details**:
 - 📊 Task: Generate and publish daily progress summary
 - ⚙️ Config: /home/ubuntu/.openclaw/workspace/skills/premium-report/
@@ -63,8 +63,15 @@
 1. Generate appropriate report (summary/full)
 2. If Monday: Include website screenshot
 3. Publish via here.now
-4. Share link in Telegram group
+4. **Post directly to Telegram group via API** (chat_id: -1003809781298)
 5. Archive report URL in daily logs
+
+📢 **Group Posting Method**:
+- Use Telegram Bot API directly: `POST https://api.telegram.org/bot<TOKEN>/sendMessage`
+- chat_id: `-1003809781298`
+- All timestamps in PST/PDT (America/Los_Angeles)
+- Tone rotation: farming humor → clever pun → farming humor
+- Reference: memory/group_relays/group_posting_rules.md
 
 ## 📈 Daily Operations
 
@@ -115,6 +122,34 @@
 - 🤖 Action: Spawn sales analysis agent with 30-minute timeout
 - 🎯 Command: Generate comprehensive sales report
 - 📑 Deliverable: Daily sales metrics and recommendations
+
+---
+
+## 📝 Weekly Blog Post
+
+```
+╔══════════════════════════════════════╗
+║ 📝 WEEKLY BLOG POST (COMPETITOR)    ║
+╚══════════════════════════════════════╝
+```
+⏰ **Schedule**: Every Monday at 10:00 AM PT
+📝 **Focus**: Original blog post modeled after a competitor article
+📋 **Details**:
+- 📊 Task: Scout competitor blogs, draft original 1800-2500 word post, publish to site
+- ⚙️ Config: memory/agents/weekly_blog_post_agent.md
+- 📂 Output: Published to premiummedscollective.com/news/
+- 📄 Log: memory/blog_drafts/publish_log.md
+- 🤖 Action: Spawn blog post agent with 45-minute timeout
+- 🎯 Process:
+  1. Scout competitor blogs (Eaze, Hyperwolf, Grassdoor, Weedmaps, Leafly, local OC)
+  2. Select one recent high-quality post to model
+  3. Draft original post with Premium Meds voice, OC focus, internal links
+  4. SEO: meta description, category, tags, fresh hero image upload
+  5. Publish via WP REST API by 12:00 PM PT
+  6. Post digest to Telegram group (-1003809781298) with live URL
+  7. Log publish details to publish_log.md
+- 📑 Deliverable: Published blog post + group digest announcement
+- 📢 Distribution: Auto-post digest to Premium Meds Collective Telegram group
 
 ---
 

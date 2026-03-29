@@ -1,0 +1,21 @@
+{
+  "id": "d1054cfc-7c78-49b4-9e8d-9b529e5c568b",
+  "enqueuedAt": 1773780069739,
+  "channel": "telegram",
+  "to": "group:-1003809781298",
+  "payloads": [
+    {
+      "text": "Acknowledged. Proceeding with the agreed delegation:\n- Marketing Agent: finalize the two OC-flavored rotating jokes and refine the current post as kicker.\n- Web-Posting Agent: schedule weekly posts for Monday 11:30 AM PST, with the two rotating jokes in the rotation.\n- Task-Rabbit: monitor progress, compile status updates, and report back with scheduling confirmation and any draft tweaks.\n\nDeliverables you’ll see next:\n- Confirmed scheduled posts timeline.\n- Drafts for Joke 1 and Joke 2 ready for final approval (tonality and OC references verified).\n- Current post configured as kicker for this week.\n\nIf you want any tweaks (tone, references, or different times), tell me now and I’ll adjust before finalizing."
+    }
+  ],
+  "threadId": null,
+  "mirror": {
+    "sessionKey": "agent:main:telegram:direct:group:-1003809781298",
+    "agentId": "main",
+    "text": "Acknowledged. Proceeding with the agreed delegation:\n- Marketing Agent: finalize the two OC-flavored rotating jokes and refine the current post as kicker.\n- Web-Posting Agent: schedule weekly posts for Monday 11:30 AM PST, with the two rotating jokes in the rotation.\n- Task-Rabbit: monitor progress, compile status updates, and report back with scheduling confirmation and any draft tweaks.\n\nDeliverables you’ll see next:\n- Confirmed scheduled posts timeline.\n- Drafts for Joke 1 and Joke 2 ready for final approval (tonality and OC references verified).\n- Current post configured as kicker for this week.\n\nIf you want any tweaks (tone, references, or different times), tell me now and I’ll adjust before finalizing.",
+    "idempotencyKey": "20734793-72d2-452f-ba45-32c20daae59e"
+  },
+  "retryCount": 1,
+  "lastAttemptAt": 1773780069760,
+  "lastError": "Telegram recipient must be a numeric chat ID"
+}
