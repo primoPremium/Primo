@@ -1,0 +1,68 @@
+{
+    "packages": [
+        {
+            "name": "wp-cli/restful",
+            "version": "dev-main",
+            "version_normalized": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-cli/restful.git",
+                "reference": "024fe4207e4980e1f9b5fd2358693a268276e803"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-cli/restful/zipball/024fe4207e4980e1f9b5fd2358693a268276e803",
+                "reference": "024fe4207e4980e1f9b5fd2358693a268276e803",
+                "shasum": ""
+            },
+            "require": {
+                "wp-cli/wp-cli": "*"
+            },
+            "require-dev": {
+                "behat/behat": "~2.5"
+            },
+            "time": "2023-05-27T15:51:40+00:00",
+            "default-branch": true,
+            "type": "wp-cli-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "readme": {
+                    "package_description": {
+                        "post": "bin/readme-stubs/package-description-post.md"
+                    },
+                    "using": {
+                        "body": "bin/readme-stubs/using.md"
+                    },
+                    "installing": {
+                        "body": "bin/readme-stubs/installing.md"
+                    }
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "files": [
+                    "wp-rest-cli.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Bachhuber",
+                    "email": "daniel@handbuilt.co"
+                }
+            ],
+            "description": "Unlock the potential of the WP REST API at the command line.",
+            "support": {
+                "source": "https://github.com/wp-cli/restful/tree/main",
+                "issues": "https://github.com/wp-cli/restful/issues"
+            },
+            "install-path": "../wp-cli/restful"
+        }
+    ],
+    "dev": false,
+    "dev-package-names": []
+}

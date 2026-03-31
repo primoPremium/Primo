@@ -1,0 +1,21 @@
+{
+  "id": "a3975924-7463-466d-ba38-2e6cd8cc8ef8",
+  "enqueuedAt": 1774898048108,
+  "channel": "telegram",
+  "to": "group:-1003809781298",
+  "payloads": [
+    {
+      "text": "Acknowledged. Before posting, please paste the exact final text for Starter Posts A–F here so I can review and approve. Once approved, I’ll proceed with the 2–3 posts/week cadence and populate the log and weekly report templates. If you want, you can also confirm any last-minute tweaks to tone or disclosures."
+    }
+  ],
+  "threadId": null,
+  "mirror": {
+    "sessionKey": "agent:main:telegram:direct:group:-1003809781298",
+    "agentId": "main",
+    "text": "Acknowledged. Before posting, please paste the exact final text for Starter Posts A–F here so I can review and approve. Once approved, I’ll proceed with the 2–3 posts/week cadence and populate the log and weekly report templates. If you want, you can also confirm any last-minute tweaks to tone or disclosures.",
+    "idempotencyKey": "c6a91aa0-4775-426f-9c2c-4416df57853e"
+  },
+  "retryCount": 1,
+  "lastAttemptAt": 1774898048110,
+  "lastError": "Telegram recipient must be a numeric chat ID"
+}
