@@ -8,8 +8,26 @@
 client_secret.json
 *.pem
 *.key
+*.secret
+*.enc
 .env
 .env.*
+.herenow/credentials
+.herenow/credentials/
+.openclaw/openclaw.json
+.openclaw/openclaw.json*
+.openclaw/*.local.json
+.openclaw/secure/
+.openclaw/credentials/
+.openclaw/identity/
+.openclaw/logs/
+.openclaw/keys/
+.openclaw/service-env/
+.openclaw/**/token.pickle
+.openclaw/**/*.token
+.openclaw/**/*.p12
+.openclaw/**/*.pfx
+.openclaw/**/*.jks
 
 # python
 __pycache__/
@@ -60,7 +78,5 @@ snap/
 package-lock.json
 
 .openclaw/workspace/skills/gmail/service-account.json
-.openclaw/openclaw.json
-.openclaw/*.local.json
 .venvs/
 git-secret-backups/
